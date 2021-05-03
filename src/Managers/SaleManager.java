@@ -10,16 +10,15 @@ import Services.SaleService;
 public class SaleManager implements SaleService{
 
 	@Override
-	public void addWithCampaign(Sale sale, Player player, Game game, Campaign campaign) {
+	public void add(Sale sale, Player player, Game game, Campaign campaign) {
 		System.out.println(player.getFirstName() + " isimli oyuncuya" +
 				campaign.getName() + " kampanyasıyla " +
 				game.getName() + " isimli oyun satıldı");
 	}
 
 	@Override
-	public void addWithoutCampaign(Sale sale, Player player, Game game) {
+	public void add(Sale sale, Player player, Game game) {
 		System.out.println(player.getFirstName() + " isimli oyuncuya" + game.getName() + " isimli oyun satıldı");
-		
 	}
 
 	@Override
