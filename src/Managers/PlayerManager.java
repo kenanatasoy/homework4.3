@@ -11,10 +11,14 @@ public class PlayerManager implements PlayerService {
 		this.mernisService = mernisService;
 	}
 	
+	
 	@Override
 	public void add(Player player) {
 		if(this.mernisService.validate(player)) {
 			System.out.println(player.getFirstName() + " is registered");
+		}
+		else {
+			System.out.println(player.getFirstName() + " is not registered");
 		}
 		
 	}
