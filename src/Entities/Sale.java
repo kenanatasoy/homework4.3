@@ -1,6 +1,7 @@
 package Entities;
 
 public class Sale {
+	
 	private int id;
 	private int playerId;
 	private int gameId;

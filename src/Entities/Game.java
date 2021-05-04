@@ -6,17 +6,19 @@ public class Game {
 	private int playerId;
 	private int name;
 	private int price;
+	private int campaignId;
 	
 	public Game() {
 		
 	}
 
-	public Game(int id, int playerId, int name, int price) {
+	public Game(int id, int playerId, int name, int price, int campaignId) {
 		super();
 		this.id = id;
 		this.playerId = playerId;
 		this.name = name;
 		this.price = price;
+		this.campaignId = campaignId;
 	}
 
 	public int getId() {
@@ -49,5 +51,13 @@ public class Game {
 
 	public void setPrice(int price) {
 		this.price = price;
+	}
+
+	public int getCampaignId() {
+		return campaignId;
+	}
+
+	public void setCampaignId(int campaignId) {
+		this.campaignId = campaignId;
 	}
 }

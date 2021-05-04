@@ -1,6 +1,5 @@
 package Managers;
 
-import Entities.Campaign;
 import Entities.Game;
 import Entities.Player;
 import Entities.Sale;
@@ -8,13 +7,6 @@ import Entities.Sale;
 import Services.SaleService;
 
 public class SaleManager implements SaleService{
-
-	@Override
-	public void add(Sale sale, Player player, Game game, Campaign campaign) {
-		System.out.println(player.getFirstName() + " isimli oyuncuya" +
-				campaign.getName() + " kampanyasıyla " +
-				game.getName() + " isimli oyun satıldı");
-	}
 
 	@Override
 	public void add(Sale sale, Player player, Game game) {

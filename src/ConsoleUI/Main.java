@@ -10,7 +10,8 @@ import java.time.LocalDate;
 public class Main {
 
 	public static void main(String[] args) {
-		Player player = new Player(1, 34453423, LocalDate.now(), "Kenan", "Atasoy");
+		
+		Player player = new Player(1, 34453423, LocalDate.of(1997, 07, 10), "Kenan", "Atasoy");
 		
 		MernisManager mernisManager = new MernisManager();
 		

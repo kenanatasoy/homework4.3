@@ -1,6 +1,7 @@
 package Entities;
 
 public class Campaign {
+	
 	private int id;
 	private int name;
 	private double discount;
