@@ -1,12 +1,12 @@
 package Entities;
 
-import java.time.LocalDate;
+
 
 public class Player {
 	
 	private int id;
-	private int identityNumber;
-	private LocalDate birthYear;
+	private long identityNumber;
+	private int birthYear;
 	private String firstName;
 	private String lastName;
 	
@@ -14,7 +14,7 @@ public class Player {
 		
 	}
 	
-	public Player(int id, int identityNumber, LocalDate birthYear, String firstName, String lastName) {
+	public Player(int id, long identityNumber, int birthYear, String firstName, String lastName) {
 		super();
 		this.id = id;
 		this.identityNumber = identityNumber;
@@ -31,19 +31,19 @@ public class Player {
 		this.id = id;
 	}
 
-	public int getIdentityNumber() {
+	public long getIdentityNumber() {
 		return identityNumber;
 	}
 
-	public void setIdentityNumber(int identityNumber) {
+	public void setIdentityNumber(long identityNumber) {
 		this.identityNumber = identityNumber;
 	}
 
-	public LocalDate getBirthYear() {
+	public int getBirthYear() {
 		return birthYear;
 	}
 
-	public void setBirthYear(LocalDate birthYear) {
+	public void setBirthYear(int birthYear) {
 		this.birthYear = birthYear;
 	}
 

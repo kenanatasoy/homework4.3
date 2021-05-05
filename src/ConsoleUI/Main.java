@@ -1,18 +1,20 @@
 package ConsoleUI;
 
+import java.rmi.RemoteException;
+
 import Entities.Player;
 import Managers.MernisManager;
 import Managers.PlayerManager;
-import Services.PlayerService;
 
-import java.time.LocalDate;
+
+
 
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws RemoteException {
 		
-		Player player = new Player(1, 34453423, LocalDate.of(1997, 07, 10), "Kenan", "Atasoy");
+		Player player = new Player(1, 56345455345L, 1997, "Kenan", "Atasoy");
 		
 		MernisManager mernisManager = new MernisManager();
 		

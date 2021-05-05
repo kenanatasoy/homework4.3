@@ -1,4 +1,6 @@
 package Managers;
+import java.rmi.RemoteException;
+
 import Entities.Player;
 import Services.MernisService;
 import Services.PlayerService;
@@ -13,7 +15,7 @@ public class PlayerManager implements PlayerService {
 	
 	
 	@Override
-	public void add(Player player) {
+	public void add(Player player) throws RemoteException {
 		if(this.mernisService.validate(player)) {
 			System.out.println(player.getFirstName() + " is registered");
 		}
