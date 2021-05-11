@@ -1,21 +1,23 @@
-package Entities;
+package entities;
 
-public class Sale {
+public class Game {
 	
 	private int id;
 	private int playerId;
-	private int gameId;
+	private int name;
+	private int price;
 	private int campaignId;
 	
-	public Sale() {
+	public Game() {
 		
 	}
 
-	public Sale(int id, int playerId, int gameId, int campaignId) {
+	public Game(int id, int playerId, int name, int price, int campaignId) {
 		super();
 		this.id = id;
 		this.playerId = playerId;
-		this.gameId = gameId;
+		this.name = name;
+		this.price = price;
 		this.campaignId = campaignId;
 	}
 
@@ -35,12 +37,20 @@ public class Sale {
 		this.playerId = playerId;
 	}
 
-	public int getGameId() {
-		return gameId;
+	public int getName() {
+		return name;
 	}
 
-	public void setGameId(int gameId) {
-		this.gameId = gameId;
+	public void setName(int name) {
+		this.name = name;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
 	}
 
 	public int getCampaignId() {
@@ -50,6 +60,4 @@ public class Sale {
 	public void setCampaignId(int campaignId) {
 		this.campaignId = campaignId;
 	}
-	
-	
 }
